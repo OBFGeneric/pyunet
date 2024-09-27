@@ -19,5 +19,5 @@ class ResNetSegmentation(nn.Module):
             nn.Conv2d(1024, 512, kernel_size=3, padding=1),
             nn.BatchNorm2d(512),
             nn.ReLU(),
-            nn.Conv2d(512, ch_out, kernel_size=1)  # Output: ch_out channels
+            nn.Conv2d(512, out_channels, kernel_size=1)  # Output: ch_out channels
         )
