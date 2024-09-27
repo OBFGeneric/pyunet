@@ -7,6 +7,7 @@ import os
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from lib.unet import UNet
+from lib.resnet50 import ResNetSegmentation
 from lib.unet_attn import UNetAttn
 from lib.unet_attn_dp import UNetAttnDp
 from lib.unet_attn_ghost import UNetAttnGhost
