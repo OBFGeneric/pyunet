@@ -46,6 +46,7 @@ mode_choices = [
 ]
 
 model_type_choices = [
+    "resnet50",
     "unet",
     "unet_attn",
     "unet_attn_dp",
