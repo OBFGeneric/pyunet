@@ -53,6 +53,11 @@ def initialize_model(in_channels, out_channels, model_type, device):
             in_channels=in_channels,
             out_channels=out_channels
         )
+    elif model_type == 'resnet50':
+        model = ResNetSegmentation(
+            in_channels=in_channels,
+            out_channels=out_channels
+        )
     elif model_type == 'unet_attn':
         model = UNetAttn(
             in_channels=in_channels,
