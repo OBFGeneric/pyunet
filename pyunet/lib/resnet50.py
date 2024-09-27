@@ -2,7 +2,7 @@ import torch.nn as nn
 import torchvision.models as models
 
 class ResNetSegmentation(nn.Module):
-    def __init__(self, ch_in,ch_out):
+    def __init__(self, ch_in=3,ch_out=1):
         super(ResNetSegmentation, self).__init__()
 
         # Load the pre-trained ResNet50 model
